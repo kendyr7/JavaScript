@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap; 
+}
+
+    .header_main {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+        .img {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 10%;
+        }
+        .encabezado {
+            text-align: center;
+            flex-basis: 80%;
+        }
+
+/* BARRA DE NAVEGACION CON ENLACES */
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2d4059;
+        height: 5vh;
+    } 
+        a, .nav {
+            color: white;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+/* SECCION DE ARTICULOS (Contenido principal) */
+
+    .section {
+        display: flex;
+        height: 60vh;   
+    }
+        .articulos {
+            background: #4e4e6a;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 75%;
+        }
+            .article {
+                background: #1f6cb0;
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid aqua;
+            }
+
+/* ESPACIO PUBLICITARIO */    
+
+         .aside {
+            background: #f73f52;
+            width: 25%;
+        }
+            .publicidad {
+                text-align: center;
+                background: #ffea85;
+                margin: 10px;
+                padding: 15px;
+                border: 2px solid aqua;
+            }
+
+/* PIE DE PAGINA */    
+
+    .footer {
+        background: #e6af2e;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: 10vh;
+    }
+        .pie {
+            background: #e6af2e;     
+            font-size: 16px;
+        }
+
+@media all and (max-width: 800px) {
+    .encabezado{
+        flex-direction: column;
+    }
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .encabezado{
+        flex-direction: column;
+    }
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}

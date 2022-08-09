@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <form class="form-register" autocomplete="on">
+    <h4>Formulario Registro</h4>
+    <h3>Datos Personales</h3>
+
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="tel" name="telefono" id="telefono" maxlength= "8" placeholder="Ingrese su Telefono">
+    <input class="controls" type="text" name="pais" id="pais" placeholder="Pais">
+
+    <h3>Datos de Tarjeta de Crédito</h3>
+    <input class="controls" type="tel" name="credit-number" id="credit-number" maxlength="19" placeholder="Ingrese su Tarjeta de Credito / Debito">
+    <input class="controls" type="tel" name="cc-expires" maxlength="5" id="cc-expires" placeholder="MM / YY">
+    <input class="controls" type="tel" name="cc-cvc" id="cc-cvc" placeholder="CVC">
+    <input class="controls" type="text" name="nombres" id="nombres" maxlength="3" placeholder="Nombre del Propietario">
+
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Realizar compra">
+  </form>
+
+</body>
+</html>
