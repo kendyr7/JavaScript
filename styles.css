@@ -8,15 +8,16 @@
 }
 
 :root{
-    /* ===== Colors ===== */
+    /* ===== COLORES LIGHT ===== */
     --body-color: #E4E9F7;
     --sidebar-color: rgb(80, 12, 37);
     --primary-color: #aca6ac;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
-    --text-color: #707070;
+    --text-color: #adadad;
+    --table-color: #242526;
     
-    /* ====== Transition ====== */
+    /* ====== TRANSICIONES ====== */
     --tran-03: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
@@ -34,6 +35,8 @@ body{
     color: #fff;
 }
 
+    /* ===== COLORES DARK===== */
+
 body.dark{
     --body-color: #18191a;
     --sidebar-color: #242526;
@@ -41,9 +44,10 @@ body.dark{
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
+    --table-color: #ccc;
 }
 
-/* ===== Sidebar ===== */
+/* ===== SIDEBAR ===== */
  .sidebar{
     position: fixed;
     top: 0;
@@ -59,7 +63,7 @@ body.dark{
     width: 88px;
 }
 
-/* ===== Reusable code - Here ===== */
+/* =====  ===== */
 .sidebar li{
     height: 50px;
     list-style: none;
@@ -330,7 +334,7 @@ body.dark .home .text{
     padding-left: 0rem !important;
 }
 
-/*Card background*/
+    /* ===== CARD BODY ===== */
 
 .card-body{
     /* border: solid 1px #18191a; */
@@ -356,7 +360,7 @@ body.dark .card-body .text{
 }
 
 .text2 {
-    color: var(--text-color);
+    color: var(--table-color);
 }
 
 tr th:last-child  {
@@ -366,10 +370,4 @@ tr th:last-child  {
 .navbar {
     background-color: var(--sidebar-color);
     transition: var(--tran-05);
-    /* background-image: linear-gradient(
-        -45deg, 
-        rgb(107, 53, 67) 25%, 
-        rgb(104, 47, 124) 51%, 
-        rgb(80, 12, 37) 100%
-  ); */
 }
