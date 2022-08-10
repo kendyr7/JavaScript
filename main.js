@@ -1,3 +1,31 @@
+//Dark Mode
+const body = document.querySelector('body'),
+sidebar = body.querySelector('nav'),
+toggle = body.querySelector(".toggle"),
+searchBtn = body.querySelector(".search-box"),
+modeSwitch = body.querySelector(".toggle-switch"),
+modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+body.classList.toggle("dark");
+
+if(body.classList.contains("dark")){
+  modeText.innerText = "Light mode";
+}else{
+  modeText.innerText = "Dark mode";
+  
+}
+});
+
 //Evento para crear un nuevo registro
 document.getElementById("formulario").addEventListener("submit",crear);
 
@@ -28,11 +56,32 @@ console.log("Libro Guardado Correctamente")
 e.preventDefault()
 }
 
+//funcion buscar
+function doSearch() {
+    var tableReg = document.getElementById('regTable');
+    var searchText = document.getElementById('searchTerm').value.toLowerCase();
+    for (var i = 1; i < tableReg.rows.length; i++) {
+        var cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+        var found = false;
+        for (var j = 0; j < cellsOfRow.length && !found; j++) {
+            var compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+            if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1)) {
+                found = true;
+            }
+        }
+        if (found) {
+            tableReg.rows[i].style.display = '';
+        } else {
+            tableReg.rows[i].style.display = 'none';
+        }
+    }
+}
+
 //Funcion leer
 function leer(){
     let libros = JSON.parse(localStorage.getItem("Libros"));
     document.getElementById("tbody").innerHTML = "";
-    for(let i=0; i < libros.length; i++){
+    for(let i=0; i<libros.length; i++){
         let titulo = libros[i].titulo
         let descripcion = libros[i].descripcion
         let precio = libros[i].precio
