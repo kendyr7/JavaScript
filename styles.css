@@ -318,12 +318,13 @@ body.dark .home .text{
   .card-header {
     text-align: center;
     color: white;
-    background-image: linear-gradient(
+    background-color: var(--sidebar-color) !important;
+    /* background-image: linear-gradient(
           -45deg, 
           rgb(107, 53, 67) 25%, 
           rgb(104, 47, 124) 51%, 
           rgb(80, 12, 37) 100%
-    );
+    ); */
   }
 
 .menu-links {
@@ -337,9 +338,6 @@ body.dark .home .text{
     /* ===== CARD BODY ===== */
 
 .card-body{
-    /* border: solid 1px #18191a; */
-    border-end-start-radius: 10px;
-    border-end-end-radius: 10px;
     background-color: var(--primary-color-light); 
     transition: var(--tran-05);
 }
@@ -363,11 +361,12 @@ body.dark .card-body .text{
     color: var(--table-color);
 }
 
-tr th:last-child  {
-    border-radius: 0px 6px 6px 0px;
-}
-
 .navbar {
     background-color: var(--sidebar-color);
     transition: var(--tran-05);
+}
+
+.table-dark th {
+    padding: .5rem .5rem;
+    background-color: var(--sidebar-color) !important;
 }

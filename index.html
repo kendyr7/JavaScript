@@ -15,18 +15,17 @@
     
 </head>
 <body>
-
         <!----======== NAVBAR DENTRO DEL SIDEBAR ======== -->
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <!--<img src="logo.png" alt="">-->
+                    <img src="/ProgramacionOrientadaWeb/assets/img/unan.png" alt="">
                 </span>
 
                 <div class="text logo-text">
-                    <span class="name">Anime List</span>
-                    <span class="profession">UNAN LEON</span>
+                    <span class="name">UNAN</span>
+                    <span class="profession">@kendyr7</span>
                 </div>
             </div>
 
@@ -54,14 +53,14 @@
                         <a href="https://www.linkedin.com/in/kendyr-gabriel-quintanilla-a8928010b/" target="_blank">
                             <i class='bi bi-linkedin icon' ></i>
                             <i class=''></i>
-                            <span class="text nav-text">Linkeding</span>
+                            <span class="text nav-text">LinkedIn</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="https://www.instagram.com/kendyr7/" target="_blank">
                             <i class='bi bi-instagram icon'></i>
-                            <span class="text nav-text">About us</span>
+                            <span class="text nav-text">Instagram</span>
                         </a>
                     </li>
                 </ul>
@@ -95,9 +94,9 @@
     </nav>
   
     <!----======== CARD CON INPUTS PARA AGREGAR LA INFO ======== -->
-  <div class="container mt-3" id="body">
+  <div class="container-fluid mt-3" id="body">
     <div class="row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-12 mt-4 col-md-6 col-lg-4">
             <div class="card border-0">
                 <div class="card-header">
                     <h6>Agregar un nuevo anime</h6>
@@ -121,25 +120,27 @@
         </div>
 
     <!----======== TABLE QUE MUESTRA LA INFO INGRESADA ======== -->
-        <div class="col-md-6 col-lg-8">
-            <table class="table" id="regTable">
-                <thead class="table-dark text2">
-                    <tr>
-                        <th scope="col">Titulo</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Eliminar</th>
-                        <th scope="col">Editar</th>
-                    </tr>
-                </thead>
-                <tbody class="text2" id="tbody">
-                    <tr>
-                        <td>La Bella y la Bestia</td>
-                        <td>Libro de Fantasia</td>
-                        <td>50,000</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="container-fluid">    
+            <div class="col-6 mt-4 col-md-6 col-lg-8">
+                <table class="table" id="regTable">
+                    <thead class="table-dark text2">
+                        <tr>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Eliminar</th>
+                            <th scope="col">Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text2" id="tbody">
+                        <tr>
+                            <td>La Bella y la Bestia</td>
+                            <td>Libro de Fantasia</td>
+                            <td>50,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     </div>
