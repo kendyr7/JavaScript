@@ -68,12 +68,8 @@
 
             <div class="bottom-content">
                 <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
+                    <div class="sun-moon"></div>
                     <span class="mode-text text">Dark mode</span>
-
                     <div class="toggle-switch">
                         <span class="switch"></span>
                     </div>
@@ -94,7 +90,7 @@
     </nav>
   
     <!----======== CARD CON INPUTS PARA AGREGAR LA INFO ======== -->
-  <div class="container-fluid mt-3" id="body">
+    <div class="container-fluid mt-3" id="body">
     <div class="row justify-content-center">
         <div class="col-sm-12 mt-4 col-md-6 ">
             <div class="card border-0">
@@ -110,7 +106,21 @@
                             <textarea id="descripcion" class="form-control" placeholder="Ingresar descipcion" required></textarea>
                         </div>
                         <div class="form- mb-3">
-                            <input type="number" id="precio" class="form-control" placeholder="Ingresar precio" required>
+                                <select name="" id="precio" class="form-control" required>
+                                    <option value="" selected="selected" disabled>Seleccione la Categoria</option>
+                                    <option value="Accion">Accion</option>
+                                    <option value="Comedia">Comedia</option>
+                                    <option value="Deportes">Deportes</option>
+                                    <option value="Aventura">Aventura</option>
+                                    <option value="Drama">Drama</option>
+                                    <option value="Fantasia">Fantasia</option>
+                                    <option value="Ciencia Ficcion">Ciencia Ficcion</option>
+                                    <option value="Crimen">Crimen</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Misterio">Misterio</option>
+                                    <option value="Detectives">Detectives</option>
+                                </select>
+                            <!-- <input type="number" id="precio" class="form-control" placeholder="Ingresar precio" required> -->
                         </div>
                         
                         <button type="submit" class="btn btn-success">Agregar</button>
@@ -128,7 +138,7 @@
                             <tr>
                                 <th scope="col">Titulo</th>
                                 <th scope="col">Descripcion</th>
-                                <th scope="col">Precio</th>
+                                <th scope="col">Categoria</th>
                                 <th scope="col">Eliminar</th>
                                 <th scope="col">Editar</th>
                             </tr>

@@ -62,7 +62,7 @@ body.dark{
     width: 88px;
 }
 
-/* =====  ===== */
+/* ===== ENLACES SIDEBAR ===== */
 .sidebar li{
     height: 50px;
     list-style: none;
@@ -138,6 +138,8 @@ header .image-text .profession{
     width: 40px;
     border-radius: 6px;
 }
+
+/* Flechita para esconder el SideBar */
 
 .sidebar header .toggle{
     position: absolute;
@@ -234,19 +236,6 @@ body.dark .sidebar li a:hover .text{
     width: 60px;
 }
 
-.mode .sun-moon i{
-    position: absolute;
-}
-.mode .sun-moon i.sun{
-    opacity: 0;
-}
-body.dark .mode .sun-moon i.sun{
-    opacity: 1;
-}
-body.dark .mode .sun-moon i.moon{
-    opacity: 0;
-}
-
 .menu-bar .bottom-content .toggle-switch{
     position: absolute;
     right: 0;
@@ -289,7 +278,6 @@ body.dark .switch::before{
     top: 0;
     top: 0;
     left: 250px;
-    height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
@@ -303,7 +291,6 @@ body.dark .switch::before{
 
 .sidebar.close ~ .home{
     left: 78px;
-    height: 100vh;
     width: calc(100% - 78px);
 }
 body.dark .home .text{
@@ -317,12 +304,6 @@ body.dark .home .text{
     text-align: center;
     color: white;
     background-color: var(--sidebar-color) !important;
-    /* background-image: linear-gradient(
-          -45deg, 
-          rgb(107, 53, 67) 25%, 
-          rgb(104, 47, 124) 51%, 
-          rgb(80, 12, 37) 100%
-    ); */
   }
 
 .menu-links {
