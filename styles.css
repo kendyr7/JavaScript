@@ -25,7 +25,6 @@
 }
 
 body{
-    min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -226,7 +225,6 @@ body.dark .sidebar li a:hover .text{
 }
 .sidebar .menu-bar .mode{
     border-radius: 6px;
-    background-color: var(--primary-color-light);
     position: relative;
     transition: var(--tran-05);
 }
