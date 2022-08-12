@@ -42,7 +42,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="https://github.com/kendyr7/JavaScript/tree/proyecto" target="_blank">
+                        <a href="https://github.com/kendyr7/JavaScript/tree/CRUD-Proyect" target="_blank">
                             <i class='bi bi-github icon' ></i>
                             <span class="text nav-text">GitHub</span>
                         </a>
@@ -70,7 +70,7 @@
                     <div class="sun-moon"></div>
                     <span class="mode-text text">Dark mode</span>
                     <div class="toggle-switch">
-                        <span class="switch"></span>
+                        <span accesskey="q" class="switch"></span>
                     </div>
                 </li>
                 
@@ -85,6 +85,7 @@
             <a class="navbar-brand" href="#" style="color: white;">
                 <img src="./assets/img/7030345.png" alt="" width="60" height="54" class="d-inline-block align-text-center"> 
             Anime List</a>
+            
         </div>
     </nav>
   
@@ -99,7 +100,7 @@
                 <div class="card-body">
                     <form id="formulario" name="formulario">
                         <div class="form- mb-3">
-                            <input type="text" id="titulo" class="form-control" placeholder="Ingresar Titulo" autocomplete="off">
+                            <input accesskey="t" type="text" id="titulo" class="form-control" placeholder="Ingresar Titulo" autocomplete="off">
                         </div>
                         <div class="form- mb-3">
                             <textarea id="descripcion" class="form-control" placeholder="Ingresar descipcion"></textarea>
@@ -120,7 +121,7 @@
                                     <option value="Detectives">Detectives</option>
                                 </select>
                         </div>
-                        <button type="submit" class="btn btn-primary add-btn">Agregar</button>
+                        <button accesskey="s" type="submit" class="btn btn-primary add-btn">Agregar (Alt+S)</button>
                     </form>
                 </div>
             </div>
@@ -141,16 +142,10 @@
                         </thead>
                         <tbody class="text2" id="student-list">
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <!-- <td>
-                                    <a href="#" class="btn btn-primary btn-sm edit">Edit</a>
-                                    <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
-                                </td> -->
                             </tr>
                         </tbody>
                     </table>
+                    <span class="text2"><em>Utilice Alt+V para editar y Alt+X para eliminar (elimina de abajo hacia arriba)</em></span>
                 </div>
             </div>
         </div>
