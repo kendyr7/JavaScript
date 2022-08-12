@@ -338,6 +338,7 @@ body.dark .card-body .text{
 }
 
 .text2 {
+    text-align: center;
     color: var(--table-color);
 }
 
